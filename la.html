@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="la.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Book</h1>
+    </header>
+
+    <section id="recipe-list">
+        <!-- Initial Recipes -->
+        <div class="recipe-card">
+            <h3>Avocado Toast</h3>
+            <img src="https://whatsgabycooking.com/wp-content/uploads/WGC-Avocado-Toast-copy-2.jpg" alt="Avocado Toast">
+        </div>
+        <div class="recipe-card">
+            <h3>Greek Salad</h3>
+            <img src="https://www.cookingclassy.com/wp-content/uploads/2018/02/greek-salad-4-500x500.jpg" alt="Greek Salad">
+        </div>
+    </section>
+
+    <section id="add-recipe">
+        <h2>Add a New Recipe</h2>
+        <form id="recipe-form">
+            <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+            <textarea id="recipe-ingredients" placeholder="Ingredients" required></textarea>
+            <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+            <input type="text" id="recipe-image" placeholder="Image URL">
+            <button type="submit">Add Recipe</button>
+        </form>
+    </section>
+
+    <section id="recipe-detail" style="display: none;">
+        <!-- Recipe detail will be dynamically added here -->
+    </section>
+
+    <script src="la.js"></script>
+</body>
+</html>

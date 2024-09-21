@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="August10.css">
+</head>
+<body>
+    <h1>IMAGE GALLERY</h1>
+    <div class="variable" background-color: rgb(4, 133, 90)></div>
+    <div class="gallery">
+        <div class="thumbnail">
+            <img src="kutumsar.jpg" alt="Kutumsar Cave, located near Jagdalpur in Chhattisgarh, India, is one of the longest natural caves in the world and is renowned for its stunning stalactite and stalagmite formations. The cave extends for approximately 1,350 meters and is filled with narrow passages and large chambers. It's a popular destination for tourists and adventure enthusiasts, though parts of the cave remain submerged during the rainy season. The cave is also home to blind fish, adapted to the pitch-dark environment, adding to its unique allure.">
+        </div>
+        <div class="thumbnail">
+            <img src="tiratgarh.jpg" alt="Tirathgarh Waterfall is a picturesque cascade located in the Bastar district of Chhattisgarh, India. This stunning waterfall drops from a height of about 300 feet and is known for its tiered structure, creating multiple levels of flowing water. Surrounded by dense forests, the area around the waterfall offers a tranquil and scenic environment, making it a popular spot for nature lovers and tourists. The falls are easily accessible and are part of the Kanger Valley National Park, adding to the natural beauty and biodiversity of the region.">
+        </div>
+        <div class="thumbnail">
+            <img src="mandawa .jpg" alt="Image 3 Description">
+        </div >
+        <div class='thumbnail'>
+            <img src="chitrakoot waterfall.jpg">
+        </div>
+        <div class='thumbnail'>
+            <img src="danteshwarijdp.jpg">
+        </div>
+        <div class='thumbnail'>
+            <img src="chitrakoot waterfall.jpg">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightboxImage" class="lightbox-content">
+        <div id="caption"></div>
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="August.js"></script>
+</body>
+</html>
